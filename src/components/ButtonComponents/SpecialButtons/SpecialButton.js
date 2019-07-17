@@ -1,12 +1,15 @@
 import React from "react";
+import { cn } from '../../../data'; 
 
 const SpecialButton = (props) => {
 
-  const { special } = props;
+  // const { special } = props;
 
   return (
     <>
-      <button>{special}</button>
+      <button
+        style={{ gridArea: cn(props.special) }}
+        onClick={() => props.setDisplay(0)}>{props.special}</button>
     </>
   );
 };
