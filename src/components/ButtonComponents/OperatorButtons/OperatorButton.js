@@ -6,7 +6,7 @@ const OperatorButton = (props) => {
   // const { operator } = props
 
   return (
-    <>
+    
       <button
         style={{ gridArea: cn(props.operator.char) }}
         onClick={() => {
@@ -18,7 +18,7 @@ const OperatorButton = (props) => {
           }
         }}
       >{props.operator.char}</button>
-    </>
+   
   );
 };
 

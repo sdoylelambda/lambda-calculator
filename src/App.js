@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./App.css";
+import "./App.scss";
 
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers';
 import Display from './components/DisplayComponents/Display';
@@ -14,13 +14,13 @@ function App() {
 
   return (
     <div className="container">
-      <div className="top">
+      <div className='top'>
         <Logo />
         <Display display={display} />
       </div>
       <div className="App">
-        <Operator display={display} setDisplay={setDisplay}/>
         <Numbers display={display} setDisplay={setDisplay}/>
+        <Operator display={display} setDisplay={setDisplay}/>
         <Specials display={display} setDisplay={setDisplay}/>
       </div>
     </div>

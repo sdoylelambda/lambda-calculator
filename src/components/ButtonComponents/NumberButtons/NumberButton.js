@@ -6,7 +6,7 @@ const NumberButton = (props) => {
 // const { number } = props;
 
   return (
-    <>
+    
         <button
           style={{ gridArea: cn(props.number) }}
           onClick={() => props.setDisplay(
@@ -16,7 +16,7 @@ const NumberButton = (props) => {
               `${props.display}${props.number}`
           )}
         >{props.number}</button>
-    </>
+   
   );
 };
 
